@@ -74,7 +74,7 @@ export default function ClientSideModelsList({
           <h1 className="text-2xl">Comience entrenando su primer modelo. </h1>
           <div>
             <Link href="/overview/models/train">
-              <Button className="sky-blue-600">Entrenar modelo</Button>
+              <Button className="bg-sky-600 lg">Entrenar modelo</Button>
             </Link>
           </div>
         </div>
