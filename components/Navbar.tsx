@@ -46,7 +46,7 @@ export default async function Navbar() {
               height={40}
               alt="Picture of the author"
             />{" "}
-            <span className="sm:block hidden"> Sesión de fotos</span>{" "}
+            <span> Sesión de fotos</span>{" "}
           </h2>
         </Link>
       </div>
