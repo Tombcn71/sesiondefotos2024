@@ -46,12 +46,12 @@ export default async function Navbar() {
               height={40}
               alt="Picture of the author"
             />{" "}
-            <span> Sesión de fotos</span>{" "}
+            <span className="sm:block hidden"> Sesión de fotos</span>{" "}
           </h2>
         </Link>
       </div>
       {user && (
-        <div className="hidden lg:flex flex-row gap-2">
+        <div className=" lg:flex flex-row gap-2">
           <Link href="/overview">
             <Button variant={"ghost"}>Inicio</Button>
           </Link>
