@@ -9,6 +9,7 @@ interface StripePricingTableProps
   > {
   "pricing-table-id": string;
   "publishable-key": string;
+  "client-reference-id": string;
 }
 
 declare global {
@@ -40,10 +41,9 @@ const StripePricingTable = ({ user }: Props) => {
     <div className="flex flex-1 flex-col w-full">
       <stripe-pricing-table
         pricing-table-id="prctbl_1OTkHBFHQxgFOGeC76dS2Oux"
-        publishable-key="pk_live_51O5QeBFHQxgFOGeCAf2jRzTU8BdbX8Ec3AwOZMeJFW89IlrzHuks9iFlvITh3ZArfZnofo8kxf0tBOU9kI02aGrV00cvwBdBYb">
+        publishable-key="pk_live_51O5QeBFHQxgFOGeCAf2jRzTU8BdbX8Ec3AwOZMeJFW89IlrzHuks9iFlvITh3ZArfZnofo8kxf0tBOU9kI02aGrV00cvwBdBYb"
         client-reference-id={user.id}
-        customer-email={user.email}
-      </stripe-pricing-table>
+        customer-email={user.email}></stripe-pricing-table>
     </div>
   );
 };
