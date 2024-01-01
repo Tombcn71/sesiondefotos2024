@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const CrispWithNoSSR = dynamic(() => import("../components/crisp"));
+
 export const metadata = {
   title: "IA sesion de fotos",
   description: "Genera increíbles retratos en minutos usando IA",
