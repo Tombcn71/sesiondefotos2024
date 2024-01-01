@@ -2,6 +2,7 @@ import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import Faq from "@/components/Faq";
 
 import hero from "/public/hero.png";
 
@@ -57,7 +58,7 @@ export default async function Index() {
         </div>
       </div>
       <ExplainerSection />
-      <PricingSection />
+      <PricingSection /> <Faq />
     </div>
   );
 }
