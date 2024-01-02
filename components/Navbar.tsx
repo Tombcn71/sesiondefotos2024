@@ -90,7 +90,7 @@ export default async function Navbar() {
             )}
             <DropdownMenu>
               <DropdownMenuTrigger asChild className="cursor-pointer">
-                <AvatarIcon height={24} width={24} className="text-primary" />
+                <AvatarIcon height={24} width={24} className="text-sky-600" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56">
                 <DropdownMenuLabel className="text-primary text-center overflow-hidden text-ellipsis">
