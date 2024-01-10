@@ -1,6 +1,6 @@
-import blur from "/public/blur.png";
-import example from "/public/example.png";
-import result from "/public/result.png";
+import voorbeeld from "/public/voorbeeld.png";
+import wazig from "/public/wazig.png";
+import resultaat from "/public/resultaat.png";
 
 export default function ExplainerSection() {
   return (
@@ -22,7 +22,7 @@ export default function ExplainerSection() {
           encuadrada, no gafas o sombreros.
         </p>
         <img
-          src={example.src}
+          src={voorbeeld.src}
           alt="AI Headshot example"
           className="rounded-lg object-cover w-full md:w-3/4 lg:w-1/2 mx-auto"
         />
@@ -43,7 +43,7 @@ export default function ExplainerSection() {
           electrónico cuando esté listo!{" "}
         </p>
         <img
-          src={blur.src}
+          src={wazig.src}
           alt="AI Headshot blur"
           className="rounded-lg object-cover w-full md:w-3/4 lg:w-1/2 mx-auto"
         />
@@ -64,7 +64,7 @@ export default function ExplainerSection() {
           fotografías!{" "}
         </p>
         <img
-          src={result.src}
+          src={resultaat.src}
           alt="AI Headshot result"
           className="rounded-lg object-cover w-full md:w-3/4 lg:w-1/2 mx-auto"
         />
