@@ -8,7 +8,8 @@ export const dynamic = "force-dynamic";
 
 const leapApiKey = process.env.LEAP_API_KEY;
 // For local development, recommend using an Ngrok tunnel for the domain
-const webhookUrl = `https://www.sesiondefotos.ai/leap/train-webhook`;
+const webhookUrl = `https://${process.env.VERCEL_URL}
+`;
 const leapWebhookSecret = process.env.LEAP_WEBHOOK_SECRET;
 const stripeIsConfigured = process.env.NEXT_PUBLIC_STRIPE_IS_ENABLED === "true";
 
