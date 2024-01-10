@@ -4,7 +4,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import Faq from "@/components/Faq";
 
-import hero from "/public/hero.png";
+import hero2 from "/public/hero2.png";
 
 import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
@@ -55,7 +55,7 @@ export default async function Index() {
         </div>
         <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
           <img
-            src={hero.src}
+            src={hero2.src}
             alt="AI Headshot Illustration"
             className="rounded-lg object-cover w-full h-full"
           />
