@@ -1,10 +1,10 @@
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Navbar from "@/components/Navbar";
 
 const CrispWithNoSSR = dynamic(() => import("../components/crisp"));
 
