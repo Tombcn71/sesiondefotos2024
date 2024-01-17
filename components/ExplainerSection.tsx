@@ -7,7 +7,7 @@ export default function ExplainerSection() {
     <div
       id="Como funciona"
       className="w-full max-w-6xl mt-16 p-8 bg-gray-100 rounded-lg space-y-8">
-      <h2 className="text-3xl  text-center mb-8">Cómo funciona</h2>
+      <h2 className="text-3xl  font-bold text-center mb-8">Cómo funciona</h2>
 
       {/* Step 1: Upload your images */}
       <div className="space-y-4">

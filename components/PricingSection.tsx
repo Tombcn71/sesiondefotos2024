@@ -78,7 +78,7 @@ const pricingOptions = [
   },
   {
     title: "Equipos",
-    price: "89€",
+    price: "99€",
     description:
       "Ideal para equipos de 5 personas que buscan mejorar su presencia en línea.",
     features: [

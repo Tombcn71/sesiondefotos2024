@@ -157,21 +157,20 @@ export async function POST(request: Request) {
         console.error({ modelUpdated });
       }
 
-      let allImages = [] as string[];
-      for (let step in output) {
-        if (
-          output[step].hasOwnProperty("images") &&
-          Array.isArray(output[step].images)
-        ) {
-          allImages = allImages.concat(output[step].images);
-        }
-      }
-      // console.log(allImages, "allImages");
+      // Here we join all of the arrays into one.
+      const allHeadshots = [
+        ...output.headshots_part_1,
+        ...output.headshots_part_2,
+        ...output.headshots_part_3,
+        ...output.headshots_part_4,
+      ];
+
+      console.log({ allHeadshots });
 
       const modelId = modelUpdated[0].id;
 
       await Promise.all(
-        allImages.map(async (image) => {
+        allHeadshots.map(async (image) => {
           const { error: imageError } = await supabase.from("images").insert({
             modelId: Number(modelId),
             uri: image,
